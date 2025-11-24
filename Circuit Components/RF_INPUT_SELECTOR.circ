@@ -124,7 +124,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="60,140" width="8" x="136" y="116"/>
       <circ-port height="8" pin="60,170" width="8" x="136" y="146"/>
       <circ-port height="8" pin="60,200" width="8" x="136" y="166"/>
-      <circ-port height="8" pin="330,50" width="8" x="216" y="116"/>
+      <circ-port height="10" pin="330,50" width="10" x="215" y="115"/>
       <circ-anchor facing="east" height="6" width="6" x="217" y="117"/>
     </appear>
     <wire from="(10,250)" to="(130,250)"/>
@@ -204,43 +204,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(130,540)" to="(260,540)"/>
     <wire from="(350,490)" to="(350,610)"/>
     <wire from="(10,300)" to="(10,490)"/>
-    <comp lib="6" loc="(253,114)" name="Text">
-      <a name="text" val="RF_SELECTOR_CODES"/>
+    <comp lib="6" loc="(239,199)" name="Text">
+      <a name="text" val="MFHI - 011"/>
     </comp>
-    <comp lib="0" loc="(70,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="KBD"/>
+    <comp lib="0" loc="(80,170)" name="Tunnel">
+      <a name="label" val="MFHI"/>
     </comp>
-    <comp lib="0" loc="(80,200)" name="Tunnel">
-      <a name="label" val="MFLO"/>
-    </comp>
-    <comp lib="0" loc="(260,540)" name="Tunnel">
-      <a name="label" val="RAM"/>
-    </comp>
-    <comp lib="0" loc="(80,50)" name="Tunnel">
-      <a name="label" val="POP"/>
-    </comp>
-    <comp lib="0" loc="(60,170)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="mfhi"/>
+    <comp lib="6" loc="(239,159)" name="Text">
+      <a name="text" val="RND - 010"/>
     </comp>
     <comp lib="0" loc="(70,420)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MFHI"/>
     </comp>
-    <comp lib="0" loc="(70,450)" name="Tunnel">
+    <comp lib="6" loc="(240,179)" name="Text">
+      <a name="text" val="RAM - 010"/>
+    </comp>
+    <comp lib="0" loc="(210,70)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="MFLO"/>
+      <a name="width" val="3"/>
+      <a name="label" val="SELECTOR"/>
     </comp>
-    <comp lib="6" loc="(239,141)" name="Text">
-      <a name="text" val="KBD - 001"/>
+    <comp lib="0" loc="(60,110)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="kbd"/>
     </comp>
-    <comp lib="2" loc="(160,350)" name="Priority Encoder"/>
-    <comp lib="6" loc="(72,24)" name="Text">
-      <a name="text" val="INPUTS"/>
+    <comp lib="2" loc="(240,340)" name="Multiplexer">
+      <a name="width" val="3"/>
+      <a name="disabled" val="0"/>
+      <a name="enable" val="false"/>
     </comp>
-    <comp lib="6" loc="(239,159)" name="Text">
-      <a name="text" val="RND - 010"/>
+    <comp lib="0" loc="(50,560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="LW"/>
     </comp>
     <comp lib="0" loc="(70,360)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -249,95 +245,100 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(80,140)" name="Tunnel">
       <a name="label" val="RND"/>
     </comp>
+    <comp lib="0" loc="(70,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="KBD"/>
+    </comp>
     <comp lib="0" loc="(80,110)" name="Tunnel">
       <a name="label" val="KBD"/>
     </comp>
-    <comp lib="0" loc="(60,110)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="kbd"/>
-    </comp>
-    <comp lib="1" loc="(130,540)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(239,219)" name="Text">
-      <a name="text" val="MFLO - 100"/>
-    </comp>
-    <comp lib="0" loc="(210,70)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="3"/>
-      <a name="label" val="SELECTOR"/>
-    </comp>
-    <comp lib="2" loc="(240,340)" name="Multiplexer">
-      <a name="width" val="3"/>
-      <a name="disabled" val="0"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(200,330)" name="Constant">
-      <a name="width" val="3"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(60,50)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="pop"/>
-    </comp>
-    <comp lib="6" loc="(239,199)" name="Text">
-      <a name="text" val="MFHI - 011"/>
-    </comp>
-    <comp lib="6" loc="(178,295)" name="Text">
-      <a name="text" val="FLAG_CONDITION"/>
+    <comp lib="6" loc="(72,24)" name="Text">
+      <a name="text" val="INPUTS"/>
     </comp>
     <comp lib="0" loc="(270,340)" name="Tunnel">
       <a name="width" val="3"/>
       <a name="label" val="SELECTOR"/>
     </comp>
-    <comp lib="0" loc="(50,560)" name="Tunnel">
+    <comp lib="0" loc="(50,520)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="LW"/>
+      <a name="label" val="POP"/>
     </comp>
-    <comp lib="0" loc="(80,80)" name="Tunnel">
-      <a name="label" val="LW"/>
+    <comp lib="6" loc="(253,114)" name="Text">
+      <a name="text" val="RF_SELECTOR_CODES"/>
     </comp>
-    <comp lib="6" loc="(247,24)" name="Text">
-      <a name="text" val="OUTPUTS"/>
+    <comp lib="0" loc="(140,410)" name="Constant">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(330,50)" name="Pin">
-      <a name="facing" val="west"/>
+    <comp lib="2" loc="(160,350)" name="Priority Encoder"/>
+    <comp lib="0" loc="(70,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RAM"/>
+    </comp>
+    <comp lib="0" loc="(200,330)" name="Constant">
       <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RF_INPUT_SELECTOR"/>
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(80,170)" name="Tunnel">
-      <a name="label" val="MFHI"/>
+    <comp lib="6" loc="(178,295)" name="Text">
+      <a name="text" val="FLAG_CONDITION"/>
     </comp>
-    <comp lib="6" loc="(180,484)" name="Text">
-      <a name="text" val="RAM"/>
+    <comp lib="0" loc="(260,540)" name="Tunnel">
+      <a name="label" val="RAM"/>
     </comp>
     <comp lib="0" loc="(60,200)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="mflo"/>
     </comp>
-    <comp lib="0" loc="(60,80)" name="Pin">
+    <comp lib="0" loc="(80,80)" name="Tunnel">
+      <a name="label" val="LW"/>
+    </comp>
+    <comp lib="6" loc="(180,484)" name="Text">
+      <a name="text" val="RAM"/>
+    </comp>
+    <comp lib="0" loc="(60,50)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="lw"/>
+      <a name="label" val="pop"/>
     </comp>
-    <comp lib="0" loc="(70,390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RAM"/>
+    <comp lib="0" loc="(80,200)" name="Tunnel">
+      <a name="label" val="MFLO"/>
     </comp>
-    <comp lib="0" loc="(140,410)" name="Constant">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(60,170)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="mfhi"/>
     </comp>
-    <comp lib="0" loc="(50,520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="POP"/>
-    </comp>
-    <comp lib="6" loc="(240,179)" name="Text">
-      <a name="text" val="RAM - 010"/>
+    <comp lib="1" loc="(130,540)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(60,140)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="rnd"/>
+    </comp>
+    <comp lib="6" loc="(239,141)" name="Text">
+      <a name="text" val="KBD - 001"/>
+    </comp>
+    <comp lib="0" loc="(80,50)" name="Tunnel">
+      <a name="label" val="POP"/>
+    </comp>
+    <comp lib="6" loc="(247,24)" name="Text">
+      <a name="text" val="OUTPUTS"/>
+    </comp>
+    <comp lib="0" loc="(70,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MFLO"/>
+    </comp>
+    <comp lib="6" loc="(239,219)" name="Text">
+      <a name="text" val="MFLO - 100"/>
+    </comp>
+    <comp lib="0" loc="(330,50)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RF_INPUT_SELECTOR"/>
+    </comp>
+    <comp lib="0" loc="(60,80)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="lw"/>
     </comp>
   </circuit>
 </project>
