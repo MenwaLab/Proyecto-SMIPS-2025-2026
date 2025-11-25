@@ -29,6 +29,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
     <tool name="Constant">
       <a name="width" val="32"/>
+      <a name="value" val="0xffffffff"/>
     </tool>
     <tool name="Bit Extender">
       <a name="in_width" val="1"/>
@@ -140,30 +141,30 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <rect fill="#a6a6a6" height="79" stroke="#000000" width="79" x="151" y="111"/>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="191" y="145">IS</text>
-      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="193" y="161">RF</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="159" y="133">nwrj</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="158" y="153">kbd</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="157" y="173">rnd</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="170" y="120">mfhi</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="190" y="120">mflo</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="211" y="121">HI-LO</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="170" y="187">halt</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="191" y="187">tty</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="209" y="187">nop</text>
-      <text font-family="SansSerif" font-size="8" text-anchor="middle" x="217" y="153">is RF</text>
+      <rect fill="#a6a6a6" height="141" stroke="#000000" width="143" x="150" y="108"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="220" y="167">IS</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="220" y="183">RF</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="169" y="137">nwrj</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="170" y="167">kbd</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="171" y="205">rnd</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="201" y="128">mfhi</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="240" y="128">mflo</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="277" y="127">HI-LO</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="169" y="236">halt</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="219" y="234">tty</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="269" y="234">nop</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="269" y="183">is RF</text>
       <circ-port height="8" pin="70,60" width="8" x="146" y="126"/>
-      <circ-port height="8" pin="210,60" width="8" x="206" y="106"/>
-      <circ-port height="8" pin="70,90" width="8" x="146" y="146"/>
-      <circ-port height="8" pin="210,90" width="8" x="166" y="186"/>
-      <circ-port height="8" pin="70,120" width="8" x="146" y="166"/>
-      <circ-port height="8" pin="210,120" width="8" x="206" y="186"/>
-      <circ-port height="8" pin="70,150" width="8" x="166" y="106"/>
-      <circ-port height="8" pin="210,150" width="8" x="186" y="186"/>
-      <circ-port height="8" pin="70,180" width="8" x="186" y="106"/>
-      <circ-port height="10" pin="390,120" width="10" x="225" y="145"/>
-      <circ-anchor facing="east" height="6" width="6" x="227" y="147"/>
+      <circ-port height="8" pin="210,60" width="8" x="276" y="106"/>
+      <circ-port height="8" pin="70,90" width="8" x="146" y="156"/>
+      <circ-port height="8" pin="210,90" width="8" x="146" y="226"/>
+      <circ-port height="8" pin="70,120" width="8" x="146" y="196"/>
+      <circ-port height="8" pin="210,120" width="8" x="266" y="246"/>
+      <circ-port height="8" pin="70,150" width="8" x="196" y="106"/>
+      <circ-port height="8" pin="210,150" width="8" x="216" y="246"/>
+      <circ-port height="8" pin="70,180" width="8" x="236" y="106"/>
+      <circ-port height="10" pin="390,120" width="10" x="285" y="175"/>
+      <circ-anchor facing="east" height="6" width="6" x="287" y="177"/>
     </appear>
     <wire from="(350,250)" to="(350,520)"/>
     <wire from="(300,220)" to="(420,220)"/>
@@ -176,9 +177,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(80,300)" to="(80,320)"/>
     <wire from="(80,340)" to="(80,360)"/>
     <wire from="(80,420)" to="(80,440)"/>
+    <wire from="(70,180)" to="(110,180)"/>
     <wire from="(70,120)" to="(110,120)"/>
     <wire from="(70,60)" to="(110,60)"/>
-    <wire from="(70,180)" to="(110,180)"/>
     <wire from="(80,470)" to="(120,470)"/>
     <wire from="(210,60)" to="(250,60)"/>
     <wire from="(210,120)" to="(250,120)"/>
@@ -238,20 +239,87 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MFLO"/>
     </comp>
-    <comp lib="0" loc="(70,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="rnd"/>
+    <comp lib="0" loc="(70,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="NWRJ"/>
     </comp>
-    <comp lib="0" loc="(210,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="nop"/>
+    <comp lib="0" loc="(250,150)" name="Tunnel">
+      <a name="label" val="NOP"/>
     </comp>
     <comp lib="0" loc="(350,120)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="IS_RF"/>
     </comp>
+    <comp lib="0" loc="(110,120)" name="Tunnel">
+      <a name="label" val="RND"/>
+    </comp>
+    <comp lib="6" loc="(171,244)" name="Text">
+      <a name="text" val="VERIFICATION"/>
+    </comp>
+    <comp lib="0" loc="(70,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="rnd"/>
+    </comp>
+    <comp lib="1" loc="(180,460)" name="NOR Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(260,390)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,90)" name="Tunnel">
+      <a name="label" val="KBD"/>
+    </comp>
+    <comp lib="0" loc="(70,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="mfhi"/>
+    </comp>
+    <comp lib="0" loc="(70,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="HI-LO"/>
+    </comp>
+    <comp lib="0" loc="(210,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="HI-LO"/>
+    </comp>
+    <comp lib="0" loc="(70,510)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="NOP"/>
+    </comp>
+    <comp lib="0" loc="(110,180)" name="Tunnel">
+      <a name="label" val="MFLO"/>
+    </comp>
+    <comp lib="0" loc="(70,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RND"/>
+    </comp>
+    <comp lib="0" loc="(70,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="nwrj"/>
+    </comp>
+    <comp lib="1" loc="(170,330)" name="OR Gate"/>
     <comp lib="6" loc="(360,35)" name="Text">
       <a name="text" val="OUPUT"/>
+    </comp>
+    <comp lib="0" loc="(210,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="tty"/>
+    </comp>
+    <comp lib="0" loc="(250,90)" name="Tunnel">
+      <a name="label" val="HALT"/>
+    </comp>
+    <comp lib="0" loc="(110,150)" name="Tunnel">
+      <a name="label" val="MFHI"/>
+    </comp>
+    <comp lib="0" loc="(70,300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="KBD"/>
+    </comp>
+    <comp lib="0" loc="(70,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="TTY"/>
+    </comp>
+    <comp lib="6" loc="(156,214)" name="Text">
+      <a name="text" val="NWRJ = Not Write, Read or Jump"/>
     </comp>
     <comp lib="0" loc="(390,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -259,81 +327,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Is_RF"/>
     </comp>
-    <comp lib="0" loc="(110,60)" name="Tunnel">
-      <a name="label" val="NWRJ"/>
-    </comp>
-    <comp lib="0" loc="(70,300)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="KBD"/>
-    </comp>
-    <comp lib="0" loc="(210,60)" name="Pin">
+    <comp lib="0" loc="(210,90)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="HI-LO"/>
-    </comp>
-    <comp lib="0" loc="(110,120)" name="Tunnel">
-      <a name="label" val="RND"/>
-    </comp>
-    <comp lib="0" loc="(110,180)" name="Tunnel">
-      <a name="label" val="MFLO"/>
-    </comp>
-    <comp lib="1" loc="(260,390)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(70,510)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="NOP"/>
+      <a name="label" val="halt"/>
     </comp>
     <comp lib="0" loc="(70,450)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="HALT"/>
-    </comp>
-    <comp lib="0" loc="(110,150)" name="Tunnel">
-      <a name="label" val="MFHI"/>
-    </comp>
-    <comp lib="0" loc="(70,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="mfhi"/>
-    </comp>
-    <comp lib="0" loc="(70,60)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="nwrj"/>
-    </comp>
-    <comp lib="6" loc="(156,214)" name="Text">
-      <a name="text" val="NWRJ = Not Write, Read or Jump"/>
-    </comp>
-    <comp lib="0" loc="(250,90)" name="Tunnel">
-      <a name="label" val="HALT"/>
-    </comp>
-    <comp lib="0" loc="(70,270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="NWRJ"/>
-    </comp>
-    <comp lib="0" loc="(300,390)" name="Tunnel">
-      <a name="label" val="IS_RF"/>
-    </comp>
-    <comp lib="0" loc="(110,90)" name="Tunnel">
-      <a name="label" val="KBD"/>
-    </comp>
-    <comp lib="0" loc="(250,60)" name="Tunnel">
-      <a name="label" val="HI-LO"/>
-    </comp>
-    <comp lib="1" loc="(170,330)" name="OR Gate"/>
-    <comp lib="0" loc="(70,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="RND"/>
-    </comp>
-    <comp lib="0" loc="(70,480)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="TTY"/>
-    </comp>
-    <comp lib="1" loc="(180,460)" name="NOR Gate">
-      <a name="inputs" val="4"/>
     </comp>
     <comp lib="6" loc="(161,35)" name="Text">
       <a name="text" val="INPUTS"/>
     </comp>
     <comp lib="0" loc="(250,120)" name="Tunnel">
       <a name="label" val="TTY"/>
+    </comp>
+    <comp lib="0" loc="(210,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="nop"/>
+    </comp>
+    <comp lib="0" loc="(300,390)" name="Tunnel">
+      <a name="label" val="IS_RF"/>
+    </comp>
+    <comp lib="0" loc="(70,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MFHI"/>
+    </comp>
+    <comp lib="0" loc="(110,60)" name="Tunnel">
+      <a name="label" val="NWRJ"/>
+    </comp>
+    <comp lib="0" loc="(250,60)" name="Tunnel">
+      <a name="label" val="HI-LO"/>
     </comp>
     <comp lib="0" loc="(70,180)" name="Pin">
       <a name="tristate" val="false"/>
@@ -342,28 +365,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(70,90)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="kbd"/>
-    </comp>
-    <comp lib="0" loc="(210,90)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="halt"/>
-    </comp>
-    <comp lib="0" loc="(250,150)" name="Tunnel">
-      <a name="label" val="NOP"/>
-    </comp>
-    <comp lib="6" loc="(171,244)" name="Text">
-      <a name="text" val="VERIFICATION"/>
-    </comp>
-    <comp lib="0" loc="(70,420)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="HI-LO"/>
-    </comp>
-    <comp lib="0" loc="(210,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="tty"/>
-    </comp>
-    <comp lib="0" loc="(70,360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MFHI"/>
     </comp>
   </circuit>
 </project>
