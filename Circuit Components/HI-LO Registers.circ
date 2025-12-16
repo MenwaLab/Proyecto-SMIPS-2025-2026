@@ -188,7 +188,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <rect fill="#a6a6a6" height="80" stroke="#000000" width="80" x="190" y="140"/>
+      <rect fill="#fc6782" height="80" stroke="#fc6782" width="80" x="190" y="140"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="231" y="183">HI/LO</text>
       <text font-family="SansSerif" font-size="10" text-anchor="middle" x="202" y="164">Hi In</text>
       <text font-family="SansSerif" font-size="10" text-anchor="middle" x="202" y="204">Lo In</text>
@@ -247,52 +247,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(50,100)" to="(120,100)"/>
     <wire from="(50,200)" to="(120,200)"/>
     <wire from="(270,110)" to="(340,110)"/>
-    <comp lib="0" loc="(90,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(320,420)" name="Tunnel">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(340,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="Lo"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="OutputLo"/>
     </comp>
     <comp lib="4" loc="(140,420)" name="Register">
       <a name="width" val="32"/>
       <a name="label" val="RegisterHi"/>
     </comp>
-    <comp lib="0" loc="(50,200)" name="Tunnel">
+    <comp lib="0" loc="(90,270)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="HI-LO EN"/>
+    </comp>
+    <comp lib="0" loc="(310,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="HI-LO EN"/>
+    </comp>
+    <comp lib="4" loc="(360,420)" name="Register">
       <a name="width" val="32"/>
-      <a name="label" val="Lo"/>
+      <a name="label" val="RegisterLo"/>
+    </comp>
+    <comp lib="0" loc="(90,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="HI-LO EN"/>
     </comp>
     <comp lib="0" loc="(120,200)" name="Pin">
       <a name="facing" val="west"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Lo in"/>
-    </comp>
-    <comp lib="0" loc="(170,330)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="4" loc="(360,420)" name="Register">
-      <a name="width" val="32"/>
-      <a name="label" val="RegisterLo"/>
-    </comp>
-    <comp lib="0" loc="(150,420)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="OutHi"/>
-    </comp>
-    <comp lib="0" loc="(120,100)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="HI in"/>
-    </comp>
-    <comp lib="0" loc="(120,460)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(340,460)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -302,33 +288,57 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="OutLo"/>
     </comp>
-    <comp lib="0" loc="(170,270)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="HI-LO enable"/>
+    <comp lib="0" loc="(280,210)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="OutLo"/>
+    </comp>
+    <comp lib="0" loc="(150,420)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="OutHi"/>
+    </comp>
+    <comp lib="0" loc="(50,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Lo"/>
+    </comp>
+    <comp lib="0" loc="(270,110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="OutHi"/>
     </comp>
     <comp lib="6" loc="(117,35)" name="Text">
       <a name="text" val="INPUTS"/>
       <a name="font" val="Bahnschrift bold 22"/>
     </comp>
-    <comp lib="0" loc="(90,440)" name="Tunnel">
+    <comp lib="0" loc="(120,460)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="HI-LO EN"/>
+      <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(90,270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="HI-LO EN"/>
-    </comp>
-    <comp lib="0" loc="(340,210)" name="Pin">
+    <comp lib="0" loc="(170,270)" name="Pin">
       <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="OutputLo"/>
+      <a name="label" val="HI-LO enable"/>
+    </comp>
+    <comp lib="0" loc="(320,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Lo"/>
     </comp>
     <comp lib="6" loc="(321,41)" name="Text">
       <a name="text" val="OUTPUTS"/>
       <a name="font" val="Bahnschrift bold 22"/>
+    </comp>
+    <comp lib="0" loc="(120,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="HI in"/>
+    </comp>
+    <comp lib="0" loc="(170,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
     </comp>
     <comp lib="0" loc="(340,110)" name="Pin">
       <a name="facing" val="west"/>
@@ -337,26 +347,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="OutputHi"/>
     </comp>
-    <comp lib="0" loc="(280,210)" name="Tunnel">
+    <comp lib="0" loc="(90,330)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="OutLo"/>
+      <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(310,440)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="HI-LO EN"/>
-    </comp>
-    <comp lib="0" loc="(270,110)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="OutHi"/>
-    </comp>
-    <comp lib="0" loc="(50,100)" name="Tunnel">
+    <comp lib="0" loc="(100,420)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="Hi"/>
     </comp>
-    <comp lib="0" loc="(100,420)" name="Tunnel">
+    <comp lib="0" loc="(50,100)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="Hi"/>
